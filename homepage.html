@@ -1,9 +1,277 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TheLoyalStreamer | Tutorials, Videos, Tools and more!</title>
-  </head>
-  <body>
-    <h1>hello</h1>
-  </body>
+    <head>
+        <title>The Loyal Streamer | games, tutorials, and more</title>
+        
+        <style>
+            .parallax1 {
+                background-image: url("https://miro.medium.com/max/8192/0*uPToWnYYZ5IHujoF");
+                
+                height: 200px;
+                
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .parallax2 {
+                background-image: url("https://miro.medium.com/max/8192/0*uPToWnYYZ5IHujoF");
+                
+                height: 200px;
+                
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .parallax3 {
+                background-image: url("https://miro.medium.com/max/8192/0*uPToWnYYZ5IHujoF");
+                
+                height: 500px;
+                
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .border {
+                background-color: #000;
+                border-style: double;
+                border-color: #fff;
+            }
+            .11b {
+                background-color: #fff;
+            }
+            .caption {
+                text-align: center;
+                font-size: 50px;
+                padding-top: 70px;
+                color: #fff;
+            }
+            .caption2 {
+                text-align: center;
+                font-size: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
+                color: #fff;
+            }
+            .top-container {
+                background-color: #f1f1f1;
+                padding: 30px;
+                text-align: center;
+            }
+            
+            .header {
+                padding: 4px 10px;
+                background: #555;
+                color: #f1f1f1;
+            }
+            
+            .content {
+                padding: 16px;
+            }
+            
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            
+            .sticky + .content {
+                padding-top: 102px;
+            }
+            
+            
+            
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+            }
+            
+            .navbar {
+              overflow: hidden;
+              background-color: #333;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .navbar a {
+              float: left;
+              font-size: 16px;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+            
+            .dropdown .dropbtn {
+              font-size: 16px;  
+              border: none;
+              outline: none;
+              color: white;
+              padding: 14px 16px;
+              background-color: inherit;
+              font: inherit;
+              margin: 0;
+            }
+            
+            .navbar a:hover, .dropdown:hover .dropbtn {
+              background-color: red;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              width: 100%;
+              left: 0;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content .header {
+              background: red;
+              padding: 16px;
+              color: white;
+            }
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            
+            /* Create three equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 10px;
+              background-color: #ccc;
+              height: 500px;
+            }
+            
+            .column a {
+              float: none;
+              color: black;
+              padding: 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            .column a:hover {
+              background-color: #ddd;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                height: auto;
+              }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="parallax1">
+            <div class="caption">
+                <span class="border">TheLoyalStreamer</span>
+            </div>
+        </div>
+        
+        <div class="header" id="myHeader">
+            <div class="navbar">
+              <a href="index.html"><i>Home</i></a>
+              <a href="tutorials.html">Tutorials</a>
+              <a href="videos/all.html">Videos</a>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>   
+                  <div class="row">
+                    <div class="column">
+                      <h3>Tutorials</h3>
+                      <a href="tutorials/html/htmlbasics.html">HTML</a>
+                      <a href="tutorials/scratch/scratchbasics.html">scratch</a>
+                      <a href="tutorials/basic/basicbasics.html">BASIC</a>
+                      <a href="tutorials/c/cbasics.html">C</a>
+                      <a href="tutorials/c++/c++basics.html">C++</a>
+                      <hr>
+                      <a href="tutorials/art/sketching.html">sketching</a>
+                      <a href="tutorials/art/painting.html">painting</a>
+                      <a href="tutorials/art/sculpting.html">sculpting</a>
+                    </div>
+                    <div class="column">
+                      <h3>Videos</h3>
+                      <a href="videos/math.html">Math</a>
+                      <a href="videos/physics.html">physics</a>
+                      <a href="videos/coding.html">coding</a>
+                      <hr>
+                      <a href="videos/minecraft.html">Minecraft</a>
+                      <a href="videos/roblox.html">roblox</a>
+                      <a href="videos/scratch.html">scratch</a>
+                      <hr>
+                      <a href="videos/all.html">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            
+        </div>
+        
+        <div class="content">
+            <p>hello! this is TheLoyalStreamer! this is a website that I coded that has videos, tutorials, games, and a bunch of other stuff (cuz why not)</p>
+            <p>click the buttons in the home bar to navigate between the pages. the dropdown menu has different sections for each section, like for tutorials, it has a section for coding tutorials, the html, javascript, p5.js, and so on.</p>
+            <div class="parallax2">
+                <div class="caption">
+                    <span class="border">HOME</span>
+                </div>
+            </div>
+            <div class="parallax3">
+                <div class="caption2">
+                    <p class="border">hello! a lot of you know me from scratch or youtube. (my scratch account is dudemega123. I dont know how I came up with that name.) on youtube my account is TheLoyalStreamer, and that is my username for litterally everything else. my E-mail is TheLoyalStreamer@gmail.com.</p>
+                </div>
+                <div class="caption2">
+                    <p class="border">hello! a lot of you know me from scratch or youtube. (my scratch account is dudemega123. I dont know how I came up with that name.) on youtube my account is TheLoyalStreamer, and that is my username for litterally everything else. my E-mail is TheLoyalStreamer@gmail.com.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+    </body>
 </html>
